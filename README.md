@@ -1,26 +1,32 @@
-# Proyecto Urban Grocers
-## Descripción
-Este proyecto automatiza las pruebas para la creación de kits de productos en la aplicación Urban Grocers utilizando 
-Python y la librería `pytest` para las pruebas. El flujo de trabajo incluye la creación de un usuario, la obtención de 
-un token de autenticación y la creación de un kit de productos, validando tanto las pruebas positivas como negativas.
+# Urban Grocers Project – API Test Automation
+## Description
+This project automates API testing for creating personalized product kits in the Urban Grocers application using Python and the pytest framework. The workflow includes:
+- Creating a new user
+- Retrieving an authentication token
+- Creating a custom product kit
 
-## Estructura del Proyecto
+The tests cover both positive and negative cases, verifying the server's response to different formats and sizes of the name field.
 
-- `configuration.py`: Almacena las URLs y rutas de solicitud.
-- `data.py`: Contiene los cuerpos de las solicitudes POST.
-- `sender_stand_request.py`: Contiene las funciones para enviar solicitudes.
-- `create_kit_name_kit_test.py`: Contiene las pruebas automatizadas.
-- `README.md`: Documentacion del proyecto
-- `.gitignore`: Ignora archivos innecesarios.
+## Project Structure
+- configuration.py: Stores base URLs and API routes.
+- data.py: Contains request payloads for POST methods.
+- sender_stand_request.py: Functions for sending HTTP requests.
+- create_kit_name_kit_test.py: Automated test cases.
+- README.md: Project documentation.
+- .gitignore: Specifies files and folders to exclude from version control.
 
-## Ejecución de las Pruebas
-1. Clona el repositorio.
-2. Instala las dependencias: `pip install -r requirements.txt`.
-3. Ejecuta las pruebas: `pytest create_kit_name_kit_test.py -v`.
+## How to Clone This Repository
+Open your terminal and run:
+- gh repo clone katlheenkrautz/apiautomation
+Make sure you have GitHub CLI installed to use the gh repo clone command. You can also use git clone if you prefer.
 
+## Running the Tests
+1. Clone the repository (see instructions above).
+2. Install the dependencies: pip install -r requirements.txt
+3. Run the tests: pytest create_kit_name_kit_test.py -v
 
-## Tecnologías Utilizadas
-- **Python**: Lenguaje de programación principal.
-- **Pytest**: Framework para la ejecución de pruebas.
-- **Requests**: Librería para enviar solicitudes HTTP.
+## Technologies Used
+- **Python**: Main programming language.
+- **Pytest**: Test Framework.
+- **Requests**: Library for sending HTTP requests.
 
